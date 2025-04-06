@@ -71,7 +71,7 @@ header{
     display: flex;
     overflow-x: scroll;
     scrollbar-width:none; 
-    width: 35%;
+    width: 32%;
     height: 35vh ;
  scroll-behavior: smooth;
  margin-top: 21vh;
