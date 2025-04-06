@@ -20,7 +20,7 @@ header{
     align-content: center; 
 }
 #ip{
-    width:30vw;
+    width:25vw;
     height: 35vh;
     align-content: center;
     margin-top: 25vh;
@@ -71,7 +71,7 @@ header{
     display: flex;
     overflow-x: scroll;
     scrollbar-width:none; 
-    width: 25%;
+    width: 35%;
     height: 35vh ;
  scroll-behavior: smooth;
  margin-top: 21vh;
