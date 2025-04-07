@@ -118,9 +118,30 @@ footer{
 footer a{
     text-decoration: none;
 }
-iframe:hover{
-    scale: 4;
-}
 #oppara img:hover{
     scale:2.5
 }
+#oppara a{
+    color: black;
+}
+
+#meals {
+    height: 100vh;
+    overflow-y: scroll; 
+    background: white;
+    padding: 20px;
+    border: 2px solid #ccc;
+    border-radius: 10px;
+  }
+  #meals table {
+    width: 100%;
+  }
+  #meals th, #meals td {
+    padding: 10px;
+    text-align: center;
+    border-bottom: 1px solid #eee;
+  }
+  #meals th {
+    background-color: #f2f2f2;
+  }
+  
