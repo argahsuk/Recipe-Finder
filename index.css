@@ -118,3 +118,9 @@ footer{
 footer a{
     text-decoration: none;
 }
+iframe:hover{
+    scale: 4;
+}
+#oppara img:hover{
+    scale:2.5
+}
