@@ -15,7 +15,7 @@ setInterval(function () {
 
 document.querySelector('#findBtn').addEventListener('click', async function () {
     
-    document.querySelector('#oppara').innerHTML = `<a href="#greet"><b>Looks like the chefs don't know that dish! 🍽️ Click here to Try another?</b></a>
+    document.querySelector('#oppara').innerHTML = `<a href="#greet"><b>Looks like the chefs don't know that dish! 🍽️<n> Click here to Try another?</n></b></a>
 <div id="meals">
   <table>
     <thead>
@@ -279,4 +279,5 @@ document.querySelector('#findBtn').addEventListener('click', async function () {
    }
     
 })
+
 
