@@ -280,4 +280,10 @@ document.querySelector('#findBtn').addEventListener('click', async function () {
     
 })
 
+document.getElementById('ipfield').addEventListener('keydown', function (event) {
+    if (event.key === 'Enter') {
+        event.preventDefault(); 
+        document.getElementById('findBtn').click(); 
+    }
+});
 
