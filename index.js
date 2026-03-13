@@ -1,17 +1,31 @@
 let imagediv = document.getElementById('imagediv');
 let images = document.querySelectorAll('.slider-image');
-let find_btn = document.querySelector('#findBtn')
-let x = 1;
-setInterval(function () {
-    imagediv.style.scrollBehavior = "smooth"
-    imagediv.scrollLeft += 200
-    x++;
-    if (x == 570) {
-        imagediv.style.scrollBehavior = "auto"
-        x = 1;
+
+let index = 0;
+
+setInterval(() => {
+
+    index++;
+
+    if (index >= images.length) {
+        imagediv.style.scrollBehavior = "auto";
         imagediv.scrollLeft = 0;
+        index = 0;
+
+        setTimeout(() => {
+            imagediv.style.scrollBehavior = "smooth";
+        }, 50);
+
+    } else {
+
+        imagediv.scrollTo({
+            left: images[index].offsetLeft,
+            behavior: "smooth"
+        });
+
     }
-}, 50);
+
+}, 2500);
 
 document.querySelector('#findBtn').addEventListener('click', async function () {
     
@@ -280,10 +294,13 @@ document.querySelector('#findBtn').addEventListener('click', async function () {
     
 })
 
+// adding keypress feature:-
 document.getElementById('ipfield').addEventListener('keydown', function (event) {
     if (event.key === 'Enter') {
         event.preventDefault(); 
         document.getElementById('findBtn').click(); 
     }
 });
+
+
 
