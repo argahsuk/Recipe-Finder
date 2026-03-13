@@ -105,18 +105,33 @@ header{
     top: 25vh;
 }
 
-footer{
-    background-color:  rgb(64, 86, 115);
+footer {
+     background-color: rgb(53, 34, 57);
     height: 12vh;
     overflow-y: hidden;
     align-content: center;
     font-family: 'Courier New', Courier, monospace;
     font-weight: bold;
-    overflow-x: hidden;
-    overflow-x: hidden;
+    text-align: center;
+    color: rgb(241, 238, 238);
+    font-size: 22px;
 }
-footer a{
+footer:hover b{
+    color: rgb(245, 241, 241);
+}
+footer a {
     text-decoration: none;
+    padding: 0 2vh;
+}
+
+footer img {
+    width: 1.5vw;
+    height: 3vh;
+    transition: .5s ease;
+}
+footer img:hover{
+    filter: hue-rotate(200deg) saturate(150%) brightness(90%);
+    scale: 1.4;
 }
 #oppara img:hover{
     scale:2.5
